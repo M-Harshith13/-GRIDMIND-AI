@@ -1,0 +1,66 @@
+{
+  "algorithm": "HistGradientBoostingRegressor",
+  "features": [
+    "hour",
+    "day_of_week",
+    "month",
+    "day_of_year",
+    "is_weekend",
+    "lag_1",
+    "lag_24",
+    "mean_24",
+    "mean_168"
+  ],
+  "metrics": {
+    "mae_kw": 0.3209689197959097,
+    "rmse_kw": 0.46119112078433,
+    "mape_pct": 42.352248620988526,
+    "r2": 0.5754104527778341
+  },
+  "feature_importance": [
+    {
+      "feature": "lag_1",
+      "importance": 0.6834187842805693
+    },
+    {
+      "feature": "hour",
+      "importance": 0.23369265976979445
+    },
+    {
+      "feature": "day_of_week",
+      "importance": 0.02584051373578697
+    },
+    {
+      "feature": "lag_24",
+      "importance": 0.02485039533493238
+    },
+    {
+      "feature": "mean_168",
+      "importance": 0.014435780343765614
+    },
+    {
+      "feature": "mean_24",
+      "importance": 0.01139062597544518
+    },
+    {
+      "feature": "day_of_year",
+      "importance": 0.006298847746904824
+    },
+    {
+      "feature": "month",
+      "importance": 7.239281280122251e-05
+    },
+    {
+      "feature": "is_weekend",
+      "importance": 0.0
+    }
+  ],
+  "feature_importance_method": "Permutation importance (MAE reduction)",
+  "trained_at": "2026-11-05T08:58:08.238571+00:00",
+  "training_rows": 28225,
+  "evaluation_rows": 6196,
+  "dataset_rows": 34589,
+  "dataset_start": "2006-12-16T17:00:00",
+  "dataset_end": "2010-11-26T21:00:00",
+  "dataset_source": "UCI Individual household electric power consumption"
+}
